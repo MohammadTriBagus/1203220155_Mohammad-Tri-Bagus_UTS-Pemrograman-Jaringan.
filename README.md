@@ -1082,10 +1082,10 @@ Outputnya salah karena kata yang diinputkan tidak sesuai translate bahasa indone
    Sent color red to ('127.0.0.1.4', 7890)
    ```
 - Pada tahap 4, server berhasil dijalankan dan mencetak pesan bahwa server berjalan dan siap menerima permintaan dari klien di alamat IP 127.0.0.1 dan port 8080.
-  ![alt text](?raw=true)
+  ![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Server/1.png?raw=true)
   
 - Pada tahap 5, server menerima permintaan dari tiga klien yang berbeda dan merespons dengan mengirimkan warna acak kepada masing-masing klien. Setiap kali server mengirim warna, ia mencetak pesan yang menunjukkan warna yang dikirim dan alamat klien yang menerima warna tersebut.
-![alt text](?raw=true)
+![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Server/server.png?raw=true)
 
 
 **2). Cara Kerja Client 1-10**
