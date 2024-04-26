@@ -1060,40 +1060,53 @@ Outputnya salah karena kata yang diinputkan tidak sesuai translate bahasa indone
    ```
    Tidak ada output pada tahap ini, karena hanya melakukan inisialisasi variabel dan fungsi.
    ```
-     **Fungsi `generate_random_color()`**:
+**2)Fungsi `generate_random_color()`**:
    ```
    Tidak ada output pada tahap ini, karena fungsi `generate_random_color()` hanya mengembalikan warna acak dan tidak mencetak apapun.
    ```
 
-3. **Fungsi `handle_client_request(server_socket, client_address)`**:
+**3). Fungsi `handle_client_request(server_socket, client_address)`**:
    ```
    Tidak ada output pada tahap ini, karena fungsi `handle_client_request()` hanya mencetak pesan saat dipanggil oleh server untuk menangani permintaan dari klien.
    ```
 
-4. **Fungsi `main()`**:
+**4). Fungsi `main()`**:
    ```
    Server running on 127.0.0.1:8080
    ```
 
-5. **Eksekusi Program**:
+**5. Eksekusi Program**:
    ```
    Sent color pink to ('127.0.0.1.2', 5678)
    Sent color gray to ('127.0.0.1.3', 6789)
    Sent color red to ('127.0.0.1.4', 7890)
    ```
-
-Dalam contoh output di atas:
 - Pada tahap 4, server berhasil dijalankan dan mencetak pesan bahwa server berjalan dan siap menerima permintaan dari klien di alamat IP 127.0.0.1 dan port 8080.
+  ![alt text](?raw=true)
+  
 - Pada tahap 5, server menerima permintaan dari tiga klien yang berbeda dan merespons dengan mengirimkan warna acak kepada masing-masing klien. Setiap kali server mengirim warna, ia mencetak pesan yang menunjukkan warna yang dikirim dan alamat klien yang menerima warna tersebut.
+![alt text](?raw=true)
+
 
 **2). Cara Kerja Client 1-10**
 - Klien juga dibuat menggunakan soket UDP.
 - Klien masuk ke dalam loop tak terbatas di mana ia mengirim pesan "request_color" ke server dan menunggu respons.
 - Setelah menerima warna dari server, klien mencetak warna tersebut.
+  ![alt text](?raw=true)
+  
 - Klien kemudian meminta pengguna untuk memasukkan terjemahan warna tersebut dalam Bahasa Indonesia.
-- Klien membandingkan jawaban pengguna dengan terjemahan yang benar. Jika jawaban pengguna benar, klien mencetak “Jawaban Benar. skor: 100”. Jika jawaban pengguna salah, klien mencetak “Jawaban Salah. skor: 0”.
-- Klien kemudian berhenti selama 10 detik sebelum mengirim permintaan warna berikutnya ke server.
+  ![alt text](?raw=true)
 
+- Klien membandingkan jawaban pengguna dengan terjemahan yang benar. Jika jawaban pengguna benar, klien mencetak “Jawaban Benar. skor: 100”. Jika jawaban pengguna salah, klien mencetak “Jawaban Salah. skor: 0”.
+  a) Ini untuk Jawaban Benar Seperti gambar dibawah ini :
+     ![alt text](?raw=true)
+    
+  b) Ini untk Jawaban Salah Seperti gambar dibawah ini
+     ![alt text](?raw=true)
+  
+- Klien kemudian berhenti selama 10 detik sebelum mengirim permintaan warna berikutnya ke server.
+  ![alt text](?raw=true)
+  
 Tambahan :
 - Fungsi english_to_indonesian_color digunakan untuk mengubah warna dari Bahasa Inggris ke Bahasa Indonesia. Fungsi ini menggunakan kamus di mana kunci adalah warna dalam Bahasa Inggris dan nilai adalah terjemahan dalam Bahasa Indonesia. Fungsi ini mengembalikan terjemahan jika ditemukan, atau string "Tidak Dapat Menemukan Warna yang Spesifik" jika tidak.
 - Harap dicatat bahwa kode ini tidak menangani beberapa kasus seperti apa yang terjadi jika server tidak berjalan ketika klien mencoba terhubung, atau apa yang terjadi jika klien mengirim pesan yang bukan "request_color".
