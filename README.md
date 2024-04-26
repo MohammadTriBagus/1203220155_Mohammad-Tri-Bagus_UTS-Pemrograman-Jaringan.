@@ -1092,20 +1092,20 @@ Outputnya salah karena kata yang diinputkan tidak sesuai translate bahasa indone
 - Klien juga dibuat menggunakan soket UDP.
 - Klien masuk ke dalam loop tak terbatas di mana ia mengirim pesan "request_color" ke server dan menunggu respons.
 - Setelah menerima warna dari server, klien mencetak warna tersebut.
-  ![alt text](?raw=true)
+  ![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Client/1.png?raw=true)
   
 - Klien kemudian meminta pengguna untuk memasukkan terjemahan warna tersebut dalam Bahasa Indonesia.
-  ![alt text](?raw=true)
+  ![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Client/2.png?raw=true)
 
 - Klien membandingkan jawaban pengguna dengan terjemahan yang benar. Jika jawaban pengguna benar, klien mencetak “Jawaban Benar. skor: 100”. Jika jawaban pengguna salah, klien mencetak “Jawaban Salah. skor: 0”.
   a) Ini untuk Jawaban Benar Seperti gambar dibawah ini :
-     ![alt text](?raw=true)
+     ![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Client/3.png?raw=true)
     
   b) Ini untk Jawaban Salah Seperti gambar dibawah ini
-     ![alt text](?raw=true)
+     ![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Client/4.1..png?raw=true)
   
 - Klien kemudian berhenti selama 10 detik sebelum mengirim permintaan warna berikutnya ke server.
-  ![alt text](?raw=true)
+  ![alt text](https://github.com/MohammadTriBagus/1203220155_Mohammad-Tri-Bagus_UTS-Pemrograman-Jaringan./blob/main/assets/Gambar%20Client/4.png?raw=true)
   
 Tambahan :
 - Fungsi english_to_indonesian_color digunakan untuk mengubah warna dari Bahasa Inggris ke Bahasa Indonesia. Fungsi ini menggunakan kamus di mana kunci adalah warna dalam Bahasa Inggris dan nilai adalah terjemahan dalam Bahasa Indonesia. Fungsi ini mengembalikan terjemahan jika ditemukan, atau string "Tidak Dapat Menemukan Warna yang Spesifik" jika tidak.
